@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>AUTISM SPECTRUM PREDICTION</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link href="static/layout/styles/ms1.css" rel="stylesheet" type="text/css" media="all">
+    <style>
+        /* Center Header */
+        #logo h1 {
+            text-align: center;
+            font-size: 32px;
+            font-weight: bold;
+            color: #f1f1f3;
+        }
+
+        /* Background Image */
+        .bgded {
+            background-image: url('static/images/hi.png'); 
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100vh;
+        }
+
+        /* Center Content */
+        .center-content {
+            text-align: center;
+            margin-top: 15%;
+            color: rgb(234, 229, 229);
+            font-size: 22px;
+        }
+
+        /* Navigation Menu */
+        #mainav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            padding: 10px;
+        }
+
+        #mainav ul li {
+            margin: 0 15px;
+        }
+
+        #mainav ul li a {
+            text-decoration: none;
+            font-size: 20px;
+            font-weight: bold;
+            color: white;
+            padding: 10px 15px;
+            background: rgba(0, 0, 0, 0.6);
+            border-radius: 8px;
+        }
+
+        #mainav ul li a:hover {
+            background: #f2ff00;
+            color: #fff;
+        }
+    </style>
+</head>
+<body id="top">
+<div class="bgded overlay">
+    
+    <div class="wrapper row1">
+        <header id="header" class="hoc clear">
+            <div id="logo">
+                <h1>AUTISM SPECTRUM PREDICTION</h1>
+            </div>
+            <nav id="mainav">
+                <ul>
+                    <li><a href="/prediction">Prediction</a></li>
+                    <li><a href="/">Logout</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+
+    <div id="pageintro" class="hoc center-content">
+        <h2>AUTISM DETECTOR</h2>
+        <h3 style="color: rgb(249, 252, 252);">{{ msg }}</h3>
+    </div>
+
+</div>
+
+<a id="backtotop" href="#top"><i class="fas fa-chevron-up"></i></a>
+
+<!-- JAVASCRIPTS -->
+<script src="static/layout/scripts/jquery.min.js"></script>
+<script src="static/layout/scripts/jquery.backtotop.js"></script>
+<script src="static/layout/scripts/jquery.mobilemenu.js"></script>
+</body>
+</html>

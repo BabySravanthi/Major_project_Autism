@@ -1,0 +1,106 @@
+/* Reset and Global Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background: url('/static/images/demo/backgrounds/hi.png') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    color: white;
+}
+
+/* Navigation Bar */
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px;
+}
+
+.navbar a {
+    color: rgb(44, 42, 42);
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+.navbar a:hover {
+    color: #7bff00;
+    text-decoration: underline;
+}
+
+/* Autism Detector Heading (Top Left) */
+.heading-top-left {
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    font-size: 2.8rem;
+    font-weight: bold;
+    color: #222221;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Centered Content */
+.center-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+    max-width: 900px;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.6); /* Adds a dark transparent background */
+    border-radius: 15px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #d3d2cd;
+    text-align: center;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+.center-text h2 {
+    font-size: 2rem;
+    color: #48f4e8;
+    margin-bottom: 10px;
+}
+
+.center-text p {
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .heading-top-left {
+        font-size: 2rem;
+        top: 5%;
+        left: 3%;
+    }
+
+    .center-text {
+        width: 90%;
+        font-size: 1.4rem;
+        padding: 15px;
+    }
+
+    .center-text h2 {
+        font-size: 1.6rem;
+    }
+
+    .center-text p {
+        font-size: 1.2rem;
+    }
+
+    .navbar {
+        justify-content: center;
+    }
+
+    .navbar a {
+        font-size: 1rem;
+        margin: 0 10px;
+    }
+}

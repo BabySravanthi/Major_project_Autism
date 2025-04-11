@@ -1,0 +1,83 @@
+/* Apply Background Image */
+body {
+    background: url('/static/images/demo/backgrounds/hi.png') no-repeat center center fixed;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation (Preprocessing on the top right) */
+.navbar {
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar li {
+    display: inline;
+    margin-left: 20px;
+}
+
+.navbar a {
+    color: rgb(235, 229, 229); /* White text */
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.navbar a:hover {
+    color: #7bff00; /* Green hover effect */
+}
+
+/* Table Styling */
+table {
+    width: 80%;
+    border-collapse: collapse;
+    background: rgba(240, 237, 237, 0.8); /* Light background for readability */
+    margin: auto;
+    margin-top: 50px;
+}
+
+/* Table Heading (White Text on Black Background) */
+th {
+    background-color: rgb(14, 13, 13);
+    color: rgb(250, 245, 245) !important; /* Ensures table headers are white */
+    font-size: 1rem;
+    padding: 8px;
+    border: 1px solid rgb(246, 242, 242);
+    text-align: center;
+}
+
+/* Table Data */
+td {
+    padding: 8px;
+    border: 1px solid rgb(242, 238, 238);
+    text-align: center;
+    font-size: 1rem;
+    color: blue;
+}
+
+/* Dataset Text Styling */
+.dataset-text {
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: blue;
+    text-align: center;
+    margin-top: 50px;
+}
+
+/* Center Align Table Container */
+.table-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-top: 20px;
+}
